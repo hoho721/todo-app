@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-indigo-50 via-white to-purple-50 min-h-screen;
+  }
+}
+
+@layer utilities {
+  .todo-checkbox {
+    @apply w-5 h-5 rounded-full border-2 border-gray-300 flex items-center justify-center flex-shrink-0 cursor-pointer transition-all duration-200;
+  }
+  .todo-checkbox.checked {
+    @apply border-indigo-500 bg-indigo-500;
+  }
+}
